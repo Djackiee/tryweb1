@@ -100,8 +100,8 @@ h1#christmas-text {
   background-color: #e84701;
   border-radius: 80px;
   position: absolute;
-  left: 900px;
-  top: 100px;
+  left: 300px;
+  top: 450px;
 }
 .santa:before,
 .santa:after {
