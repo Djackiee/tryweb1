@@ -29,6 +29,20 @@ h1#christmas-text {
   
   .text {
     animation: slideIn 4s ease-in-out forwards;
+    max-width: 800px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the text container */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    h1#christmas-text {
+      font-size: 60px; /* Adjust the font size for smaller screens */
+    }
+  
+    .text {
+      max-width: 100%; /* Use full width on smaller screens */
+      padding: 0 20px; /* Add padding to the sides for better readability */
+    }
   }
   
   @keyframes slideIn {
