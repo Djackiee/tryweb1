@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <h1 id="christmas-text">Merry Christmas</h1>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.body;
+
+        for (let i = 0; i < 50; i++) {
+          createSnowflake();
+        }
+        function createSnowflake() {
+          const snowflake = document.createElement("div");
+          snowflake.className = "snowflake";
+          snowflake.innerHTML = "❄";
+          snowflake.style.left = `${Math.random() * 100}vw`;
+          snowflake.style.animationDuration = `${Math.random() * 4 + 2}s`;
+          snowflake.style.animationDelay = `-${Math.random()}s`;
+
+          container.appendChild(snowflake);
+
+          snowflake.addEventListener("animationiteration", () => {
+            snowflake.style.left = `${Math.random() * 100}vw`;
+            snowflake.style.animationDuration = `${Math.random() * 4 + 2}s`;
+            snowflake.style.animationDelay = `-${Math.random()}s`;
+          });
+        }
+      });
+    </script>
+    <div class="container">
+      <div class="text-container">
+        <div class="text">
+          <p>Hey,</p>
+          <p>As the snowflakes gently fall outside, I find myself thinking about how incredibly lucky I am to have you in my life, especially on this magical Christmas day. 🎄❤️ The festive lights are twinkling, and the air is filled with warmth and joy, mirroring the love we share.</p>
+          <p>This Christmas isn't just about the presents under the tree but the presence of someone as wonderful as you. Your laughter is the sweetest melody, and your smile lights up my world brighter than any Christmas lights ever could. 🌟</p>
+          <p>As we gather with friends and family, my heart is full knowing I get to spend this special day with you. Whether it's cozying up by the fireplace or sharing stories over a delicious Christmas feast, every moment is made better with you by my side.</p>
+          <p>Reflecting on the past year, I appreciate the love, support, and countless memories we've created together. It's these moments that make life truly magical. 🌠</p>
+          <p>So here's to us, to love that grows stronger with each passing day, and to a future filled with more adventures, laughter, and shared dreams. May this Christmas be a beautiful chapter in our love story, and may the coming year bring us even closer.</p>
+          <p>Merry Christmas. Thank you for being my greatest gift.</p>
+          <p>Yours always.</p>
+        </div>
+      </div>
+      <div class="santa">
+        <div class="hand-l"></div>
+        <div class="hand-r"></div>
+        <div class="hat"></div>
+        <div class="face">
+          <div class="beard"></div>
+          <div class="eyes"></div>
+        </div>
+        <div class="belt"></div>
+        <div class="shoe"></div>
+      </div>
+    </div>
+  </body>
+</html>
