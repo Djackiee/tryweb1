@@ -17,7 +17,7 @@ h1#christmas-text {
     text-align: center;
     color: white;
     font-size: 80px;
-    margin-top: 5%;
+    margin-top: 2%;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
   }
